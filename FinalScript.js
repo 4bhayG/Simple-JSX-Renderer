@@ -26,6 +26,10 @@ h("p", null , h("u" , null , h("b" , null , "Simple JSX Renderer"))),
 h("ul", null, foo(ITEMS)));
 
 
+/** @jsx h */
+let newvdom  = <div>Hey EveryOne<b>My Name is Abhay</b></div> ;
+console.log(newvdom);
+
 // render() converts our "virtual DOM" (see below) to a real DOM Tree Structure Via using Simple Core JS Functions
 let dom = render(vdom);
 
